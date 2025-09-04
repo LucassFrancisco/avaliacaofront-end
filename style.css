@@ -1,126 +1,102 @@
+/* Estilo base da página */
 body {
-  margin: 0; /* tira a margem padrão que o navegador coloca em volta da página */
-  font-family: Arial, sans-serif; /* define a fonte do texto para Arial, e se não tiver, usa outra sem serifa */
-  background: #0f0f1a; /* cor de fundo da página (um azul quase preto) */
-  color: #f5f5f5; /* cor padrão do texto (um cinza bem claro) */
+  margin: 0; /* Remove margens padrão do navegador */
+  font-family: Arial, sans-serif; /* Define a fonte principal */
+  background: #0f0f1a; /* Cor de fundo azul escuro */
+  color: #f5f5f5; /* Cor clara para o texto */
 }
 
+/* Cabeçalho principal */
 header {
-  text-align: center; /* centraliza todo o conteúdo dentro do header */
-  padding: 2rem; /* espaço interno em cima e embaixo do header */
-  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* fundo com gradiente horizontal (esquerda para direita) */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 2rem; /* Espaço interno acima e abaixo */
+  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Gradiente horizontal escuro */
 }
 
 header h1 {
-  font-size: 2.5rem; /* aumenta o tamanho do título principal */
-  color: #00d9ff; /* deixa o título em azul claro */
+  font-size: 2.5rem; /* Tamanho grande para o título */
+  color: #00d9ff; /* Azul neon para destaque */
 }
 
-section {
-  padding: 3rem 10%; /* dá espaço interno em cima/baixo (3rem) e nas laterais (10% da tela) */
+/* Seções gerais */
+.section {
+  padding: 4rem 10%; /* Espaço interno em todas as direções */
+  border-top: 2px solid #00d9ff; /* Linha azul no topo */
+  border-bottom: 2px solid #00d9ff; /* Linha azul na base */
 }
 
+/* Títulos das seções */
 h2 {
-  color: #00d9ff; /* subtítulos (h2) ficam azuis */
-  margin-bottom: 1rem; /* espaço abaixo dos subtítulos */
+  color: #00ffcc; /* Verde-água para destaque */
+  font-size: 2.2rem; /* Tamanho grande */
+  text-align: center; /* Centralizado */
+  margin-bottom: 2rem; /* Espaço abaixo do título */
+  border-bottom: 2px solid #00ffcc; /* Linha abaixo do texto */
+  display: inline-block; /* Permite usar padding e border */
+  padding-bottom: 0.5rem; /* Espaço entre texto e borda */
 }
 
+/* Texto de parágrafos */
 p {
-  line-height: 1.6; /* aumenta o espaçamento entre linhas, deixa o texto mais fácil de ler */
+  font-size: 1.1rem; /* Tamanho médio do texto */
+  line-height: 1.8; /* Espaçamento entre linhas */
+  margin-bottom: 1.5rem; /* Espaço entre parágrafos */
 }
 
-.videos {
-  display: grid; /* organiza os vídeos em grade */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  /* cria colunas que se ajustam sozinhas: cada uma tem pelo menos 300px, e ocupa o espaço disponível */
-  gap: 1.5rem; /* espaço entre os vídeos */
-  margin-top: 2rem; /* espaço acima da grade de vídeos */
-}
-
-iframe {
-  width: 100%; /* ocupa 100% da largura do espaço do vídeo */
-  height: 200px; /* altura fixa de 200px para todos os vídeos */
-  border-radius: 10px; /* cantos arredondados nos vídeos */
-  border: none; /* remove a borda padrão do iframe */
-}
-
-.futurista {
-  text-align: center; /* centraliza o conteúdo dentro dessa seção */
-  background: linear-gradient(135deg, #00111a, #00334d); /* fundo com gradiente em diagonal */
-  padding: 4rem 10%; /* espaço interno grande: 4rem em cima/baixo e 10% nas laterais */
-  border-top: 2px solid #00d9ff; /* linha azul clara no topo da seção */
-}
-
-.futurista h2 {
-  font-size: 2.2rem; /* aumenta o tamanho do título dentro da seção futurista */
-  color: #00ffcc; /* deixa o título verde-água brilhante */
-}
-
-.futurista p {
-  font-size: 1.2rem; /* aumenta um pouco o tamanho do texto nessa seção */
-  margin-top: 1rem; /* espaço entre o título e o texto */
-}
-
-/* 1. Fundo diferente para a seção de IA */
-#ia {
-  background: linear-gradient(135deg, #1a1a2e, #16213e); /* roxo escuro com azul */
-  padding: 4rem 10%;
-  border-top: 2px solid #00d9ff;
-  border-bottom: 2px solid #00d9ff;
-}
-
-/* 2. Destaque nos vídeos (sombra e efeito hover) */
-.videos iframe {
-  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* sombra azul suave */
-  transition: transform 0.3s ease;
-}
-
-.videos iframe:hover {
-  transform: scale(1.03); /* aumenta levemente no hover */
-}
-
-/* 3. Estilização dos títulos dos vídeos */
-.videos h3 {
-  color: #00ffcc; /* verde-água para contrastar com o fundo */
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-/* 4. Estilização extra do título principal da seção IA */
-#ia h2 {
-  color: #00ffcc;
-  font-size: 2.2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #00ffcc;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-}
-
+/* Seção do curso */
 #curso {
-  background: linear-gradient(135deg, #0a0a1a, #1b1b33); /* fundo escuro azulado */
-  padding: 4rem 10%;
-  border-top: 2px solid #00d9ff;
-  border-bottom: 2px solid #00d9ff;
-  box-shadow: inset 0 0 20px rgba(0, 217, 255, 0.1); /* leve brilho interno */
+  background: linear-gradient(135deg, #111133, #1a1a4d); /* Gradiente azul escuro */
+  color: #e0f7fa; /* Azul claro para texto */
 }
 
-/* Título centralizado e destacado */
-#curso h2 {
-  color: #00ffcc;
-  font-size: 2.2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #00ffcc;
-  display: inline-block;
-  padding-bottom: 0.5rem;
+/* Seção de inteligência artificial */
+#ia {
+  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradiente roxo-azulado */
 }
 
-/* Parágrafos com espaçamento maior e texto claro */
-#curso p {
-  font-size: 1.15rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  color: #e0f7fa;
+/* Grade de vídeos */
+.videos {
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+  gap: 1.5rem; /* Espaço entre colunas e linhas */
+  margin-top: 2rem; /* Espaço acima da grade */
+}
+
+/* Títulos dos vídeos */
+.videos h3 {
+  color: #00ffcc; /* Verde-água para destaque */
+  font-size: 1.2rem; /* Tamanho moderado */
+  margin-bottom: 0.5rem; /* Espaço abaixo do título */
+  text-align: center; /* Centralizado */
+}
+
+/* Estilo dos vídeos */
+iframe {
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  height: 200px; /* Altura fixa */
+  border-radius: 10px; /* Cantos arredondados */
+  border: none; /* Remove borda padrão */
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* Sombra azul suave */
+  transition: transform 0.3s ease; /* Animação suave no hover */
+}
+
+/* Efeito hover no vídeo */
+iframe:hover {
+  transform: scale(1.03); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Seção SETEC */
+.futurista {
+  text-align: center; /* Centraliza o conteúdo */
+  background: linear-gradient(135deg, #00111a, #00334d); /* Gradiente azul escuro */
+}
+
+/* Título da seção SETEC */
+.futurista h2 {
+  color: #00ffcc; /* Verde-água brilhante */
+}
+
+/* Texto da seção SETEC */
+.futurista p {
+  font-size: 1.2rem; /* Texto levemente maior */
 }
