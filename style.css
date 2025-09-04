@@ -1,93 +1,129 @@
 /* Estilo base da página */
 body {
-  margin: 0; /* Remove margens padrão do navegador */
-  font-family: Arial, sans-serif; /* Define a fonte principal */
-  background: #0f0f1a; /* Cor de fundo azul escuro */
-  color: #f5f5f5; /* Cor clara para o texto */
+  margin: 0; /* Remove margens padrão */
+  font-family: Arial, sans-serif; /* Fonte principal */
+  background: #0f0f1a; /* Fundo azul escuro */
+  color: #f5f5f5; /* Cor clara para texto */
 }
 
 /* Cabeçalho principal */
 header {
-  text-align: center; /* Centraliza o conteúdo */
-  padding: 2rem; /* Espaço interno acima e abaixo */
-  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Gradiente horizontal escuro */
+  text-align: center; /* Centraliza conteúdo */
+  padding: 2rem; /* Espaço interno */
+  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Gradiente horizontal */
 }
 
 header h1 {
-  font-size: 2.5rem; /* Tamanho grande para o título */
-  color: #00d9ff; /* Azul neon para destaque */
+  font-size: 2.5rem; /* Tamanho grande */
+  color: #00d9ff; /* Azul neon */
 }
 
 /* Estilo geral para seções */
 section {
-  padding: 4rem 10%; /* Espaço interno generoso em cima/baixo e laterais */
-  border-top: 2px solid #00d9ff; /* Linha azul no topo para todas as seções */
-  border-bottom: 2px solid #00d9ff; /* Linha azul na base para todas as seções */
-  margin-bottom: 2rem; /* Espaço entre seções para não parecerem juntas */
-  background: linear-gradient(135deg, #0a0a1a, #1b1b33); /* Fundo escuro azulado padrão para seções */
+  padding: 3rem 10%; /* Espaço interno padrão */
+  margin-bottom: 3rem; /* Espaço entre seções */
+  border-radius: 12px; /* Bordas arredondadas para suavizar */
 }
 
-/* Ajuste específico para a seção IA */
-#ia {
-  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Fundo roxo-azulado */
+/* Primeira seção (#curso) - Destaque com sombra e fundo mais claro */
+#curso {
+  background: linear-gradient(135deg, #162447, #1f4068); /* Azul médio */
+  border: 2px solid #00d9ff; /* Borda azul neon */
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); /* Sombra forte azul */
 }
 
-/* Ajuste específico para a seção futurista (SETEC) */
-.futurista {
-  background: linear-gradient(135deg, #00111a, #00334d); /* Fundo azul escuro diferenciado */
-  text-align: center; /* Centraliza o conteúdo */
-  padding: 4rem 10%; /* Espaço interno consistente */
-  border-top: 2px solid #00d9ff; /* Linha azul no topo */
-  border-bottom: 2px solid #00d9ff; /* Linha azul na base */
-  margin-bottom: 2rem; /* Espaço abaixo da seção */
-}
-
-/* Títulos das seções */
-h2 {
-  color: #00ffcc; /* Verde-água para destaque */
-  font-size: 2.2rem; /* Tamanho grande */
+#curso h2 {
+  color: #00ffcc; /* Verde-água */
+  font-size: 2.2rem; /* Tamanho do título */
   text-align: center; /* Centralizado */
-  margin-bottom: 2rem; /* Espaço abaixo do título */
-  border-bottom: 2px solid #00ffcc; /* Linha abaixo do texto */
-  display: inline-block; /* Permite usar padding e border */
-  padding-bottom: 0.5rem; /* Espaço entre texto e borda */
+  margin-bottom: 1.5rem; /* Espaço abaixo do título */
+  border-bottom: 2px solid #00ffcc; /* Linha abaixo do título */
+  display: inline-block; /* Permite padding e border */
+  padding-bottom: 0.5rem; /* Espaço entre texto e linha */
 }
 
-/* Texto de parágrafos */
-p {
-  font-size: 1.15rem; /* Tamanho médio do texto */
+#curso p {
+  font-size: 1.15rem; /* Tamanho do texto */
   line-height: 1.8; /* Espaçamento entre linhas */
   margin-bottom: 1.5rem; /* Espaço entre parágrafos */
-  color: #e0f7fa; /* Cor clara para texto */
+  color: #e0f7fa; /* Texto claro */
 }
 
-/* Grade de vídeos */
+/* Segunda seção (#ia) - fundo mais escuro, separada da primeira */
+#ia {
+  background: linear-gradient(135deg, #0b0c10, #1f2833); /* Azul bem escuro */
+  border: 2px solid #0077cc; /* Borda azul mais fechada */
+  padding: 4rem 10%; /* Mais espaço interno */
+  margin-bottom: 4rem; /* Espaço maior abaixo para separar da próxima seção */
+  border-radius: 12px; /* Bordas arredondadas */
+}
+
+#ia h2 {
+  color: #00ffcc; /* Verde-água */
+  font-size: 2.2rem; /* Tamanho do título */
+  text-align: center; /* Centralizado */
+  margin-bottom: 2rem; /* Espaço abaixo */
+  border-bottom: 2px solid #00ffcc; /* Linha abaixo */
+  display: inline-block; /* Para padding e border */
+  padding-bottom: 0.5rem; /* Espaço interno */
+}
+
+#ia p {
+  font-size: 1.15rem; /* Texto maior */
+  line-height: 1.8; /* Espaçamento entre linhas */
+  margin-bottom: 1.5rem; /* Espaço entre parágrafos */
+  color: #cbd5e1; /* Texto claro mas menos brilhante */
+}
+
+/* Grade de vídeos na seção IA */
 .videos {
-  display: grid; /* Usa grid layout */
+  display: grid; /* Layout em grade */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
-  gap: 1.5rem; /* Espaço entre colunas e linhas */
+  gap: 1.5rem; /* Espaço entre vídeos */
   margin-top: 2rem; /* Espaço acima da grade */
 }
 
-/* Títulos dos vídeos */
 .videos h3 {
-  color: #00ffcc; /* Verde-água para destaque */
-  font-size: 1.2rem; /* Tamanho moderado */
-  margin-bottom: 0.5rem; /* Espaço abaixo do título */
+  color: #00ffcc; /* Verde-água */
+  font-size: 1.2rem; /* Tamanho do texto */
+  margin-bottom: 0.5rem; /* Espaço abaixo */
   text-align: center; /* Centralizado */
 }
 
-/* Estilo dos vídeos */
-iframe {
-  width: 100%; /* Ocupa toda a largura do contêiner */
+.videos iframe {
+  width: 100%; /* Largura total */
   height: 200px; /* Altura fixa */
   border-radius: 10px; /* Cantos arredondados */
-  border: none; /* Remove borda padrão */
-  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* Sombra azul suave */
-  transition: transform 0.3s ease; /* Animação suave no hover */
+  border: none; /* Sem borda */
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* Sombra azul */
+  transition: transform 0.3s ease; /* Animação suave */
 }
 
-/* Efeito hover no vídeo */
-iframe:hover {
-  transform: scale(1.03); /* Aumenta levemente ao passar o mouse */
+.videos iframe:hover {
+  transform: scale(1.03); /* Aumento leve no hover */
+}
+
+/* Terceira seção (.futurista) - fundo diferente e bem destacado */
+.futurista {
+  background: linear-gradient(135deg, #00334d, #005577); /* Azul vibrante */
+  padding: 4rem 10%; /* Espaço interno */
+  border: 2px solid #00d9ff; /* Borda azul clara */
+  border-radius: 12px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza texto */
+  color: #a0f0e0; /* Cor do texto um pouco diferente */
+}
+
+.futurista h2 {
+  font-size: 2.2rem; /* Tamanho do título */
+  color: #00ffcc; /* Verde-água */
+  margin-bottom: 1.5rem; /* Espaço abaixo */
+  border-bottom: 2px solid #00ffcc; /* Linha abaixo */
+  display: inline-block; /* Para padding e border */
+  padding-bottom: 0.5rem; /* Espaço interno */
+}
+
+.futurista p {
+  font-size: 1.2rem; /* Texto maior */
+  margin-bottom: 1.5rem; /* Espaço entre parágrafos */
+  line-height: 1.6; /* Espaçamento entre linhas */
 }
