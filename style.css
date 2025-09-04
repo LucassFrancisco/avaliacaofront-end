@@ -18,11 +18,28 @@ header h1 {
   color: #00d9ff; /* Azul neon para destaque */
 }
 
-/* Seções gerais */
-.section {
-  padding: 4rem 10%; /* Espaço interno em todas as direções */
+/* Estilo geral para seções */
+section {
+  padding: 4rem 10%; /* Espaço interno generoso em cima/baixo e laterais */
+  border-top: 2px solid #00d9ff; /* Linha azul no topo para todas as seções */
+  border-bottom: 2px solid #00d9ff; /* Linha azul na base para todas as seções */
+  margin-bottom: 2rem; /* Espaço entre seções para não parecerem juntas */
+  background: linear-gradient(135deg, #0a0a1a, #1b1b33); /* Fundo escuro azulado padrão para seções */
+}
+
+/* Ajuste específico para a seção IA */
+#ia {
+  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Fundo roxo-azulado */
+}
+
+/* Ajuste específico para a seção futurista (SETEC) */
+.futurista {
+  background: linear-gradient(135deg, #00111a, #00334d); /* Fundo azul escuro diferenciado */
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 4rem 10%; /* Espaço interno consistente */
   border-top: 2px solid #00d9ff; /* Linha azul no topo */
   border-bottom: 2px solid #00d9ff; /* Linha azul na base */
+  margin-bottom: 2rem; /* Espaço abaixo da seção */
 }
 
 /* Títulos das seções */
@@ -38,20 +55,10 @@ h2 {
 
 /* Texto de parágrafos */
 p {
-  font-size: 1.1rem; /* Tamanho médio do texto */
+  font-size: 1.15rem; /* Tamanho médio do texto */
   line-height: 1.8; /* Espaçamento entre linhas */
   margin-bottom: 1.5rem; /* Espaço entre parágrafos */
-}
-
-/* Seção do curso */
-#curso {
-  background: linear-gradient(135deg, #111133, #1a1a4d); /* Gradiente azul escuro */
-  color: #e0f7fa; /* Azul claro para texto */
-}
-
-/* Seção de inteligência artificial */
-#ia {
-  background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradiente roxo-azulado */
+  color: #e0f7fa; /* Cor clara para texto */
 }
 
 /* Grade de vídeos */
@@ -83,20 +90,4 @@ iframe {
 /* Efeito hover no vídeo */
 iframe:hover {
   transform: scale(1.03); /* Aumenta levemente ao passar o mouse */
-}
-
-/* Seção SETEC */
-.futurista {
-  text-align: center; /* Centraliza o conteúdo */
-  background: linear-gradient(135deg, #00111a, #00334d); /* Gradiente azul escuro */
-}
-
-/* Título da seção SETEC */
-.futurista h2 {
-  color: #00ffcc; /* Verde-água brilhante */
-}
-
-/* Texto da seção SETEC */
-.futurista p {
-  font-size: 1.2rem; /* Texto levemente maior */
 }
