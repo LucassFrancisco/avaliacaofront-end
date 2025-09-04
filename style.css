@@ -20,15 +20,18 @@ header h1 {
 
 /* === Estilo comum para todas as seções === */
 section {
-  padding: 3rem 10%; /* Espaço interno vertical e horizontal */
-  margin-bottom: 3rem; /* Espaço entre seções */
+  padding: 4rem 10%; /* Espaço interno vertical e horizontal (uniformizado) */
+  margin-bottom: 4rem; /* Espaço entre seções */
   border-radius: 12px; /* Bordas arredondadas para suavizar */
+  border: 2px solid transparent; /* Borda padrão invisível para evitar quebra no layout */
+  box-shadow: 0 0 0 transparent; /* Sombra padrão invisível */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Suaviza mudanças */
 }
 
 /* === Seção 1: Curso de Desenvolvimento === */
 #curso {
   background: linear-gradient(135deg, #162447, #1f4068); /* Fundo azul médio */
-  border: 2px solid #00d9ff; /* Borda azul neon */
+  border-color: #00d9ff; /* Borda azul neon */
   box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); /* Sombra azul intensa */
 }
 
@@ -52,10 +55,8 @@ section {
 /* === Seção 2: Inteligência Artificial === */
 #ia {
   background: linear-gradient(135deg, #0b0c10, #1f2833); /* Fundo azul bem escuro */
-  border: 2px solid #0077cc; /* Borda azul fechada */
-  padding: 4rem 10%; /* Espaço interno maior */
-  margin-bottom: 4rem; /* Espaço maior para separar da próxima seção */
-  border-radius: 12px; /* Bordas arredondadas */
+  border-color: #0077cc; /* Borda azul fechada */
+  box-shadow: 0 0 20px rgba(0, 119, 204, 0.6); /* Sombra azul média */
 }
 
 #ia h2 {
@@ -106,9 +107,8 @@ section {
 /* === Seção 3: Futurista === */
 .futurista {
   background: linear-gradient(135deg, #00334d, #005577); /* Fundo azul vibrante */
-  padding: 4rem 10%; /* Espaço interno */
-  border: 2px solid #00d9ff; /* Borda azul clara */
-  border-radius: 12px; /* Bordas arredondadas */
+  border-color: #00d9ff; /* Borda azul clara */
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.7); /* Sombra azul intensa */
   text-align: center; /* Centraliza o conteúdo */
   color: #a0f0e0; /* Texto com tom diferente para destaque */
 }
