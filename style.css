@@ -1,60 +1,60 @@
-/* Estilo base da página */
+/* === Estilo base da página === */
 body {
-  margin: 0; /* Remove margens padrão */
-  font-family: Arial, sans-serif; /* Fonte principal */
+  margin: 0; /* Remove margem padrão do navegador */
+  font-family: Arial, sans-serif; /* Fonte principal da página */
   background: #0f0f1a; /* Fundo azul escuro */
-  color: #f5f5f5; /* Cor clara para texto */
+  color: #f5f5f5; /* Cor clara para textos */
 }
 
-/* Cabeçalho principal */
+/* === Cabeçalho === */
 header {
-  text-align: center; /* Centraliza conteúdo */
-  padding: 2rem; /* Espaço interno */
-  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Gradiente horizontal */
+  text-align: center; /* Centraliza o conteúdo do header */
+  padding: 2rem; /* Espaço interno em cima e embaixo */
+  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Fundo com gradiente horizontal */
 }
 
 header h1 {
-  font-size: 2.5rem; /* Tamanho grande */
-  color: #00d9ff; /* Azul neon */
+  font-size: 2.5rem; /* Tamanho grande para o título */
+  color: #00d9ff; /* Cor azul neon */
 }
 
-/* Estilo geral para seções */
+/* === Estilo comum para todas as seções === */
 section {
-  padding: 3rem 10%; /* Espaço interno padrão */
+  padding: 3rem 10%; /* Espaço interno vertical e horizontal */
   margin-bottom: 3rem; /* Espaço entre seções */
   border-radius: 12px; /* Bordas arredondadas para suavizar */
 }
 
-/* Primeira seção (#curso) - Destaque com sombra e fundo mais claro */
+/* === Seção 1: Curso de Desenvolvimento === */
 #curso {
-  background: linear-gradient(135deg, #162447, #1f4068); /* Azul médio */
+  background: linear-gradient(135deg, #162447, #1f4068); /* Fundo azul médio */
   border: 2px solid #00d9ff; /* Borda azul neon */
-  box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); /* Sombra forte azul */
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); /* Sombra azul intensa */
 }
 
 #curso h2 {
-  color: #00ffcc; /* Verde-água */
+  color: #00ffcc; /* Cor verde-água */
   font-size: 2.2rem; /* Tamanho do título */
   text-align: center; /* Centralizado */
   margin-bottom: 1.5rem; /* Espaço abaixo do título */
-  border-bottom: 2px solid #00ffcc; /* Linha abaixo do título */
+  border-bottom: 2px solid #00ffcc; /* Linha azul abaixo */
   display: inline-block; /* Permite padding e border */
-  padding-bottom: 0.5rem; /* Espaço entre texto e linha */
+  padding-bottom: 0.5rem; /* Espaço entre o texto e a linha */
 }
 
 #curso p {
-  font-size: 1.15rem; /* Tamanho do texto */
+  font-size: 1.15rem; /* Texto maior para melhor leitura */
   line-height: 1.8; /* Espaçamento entre linhas */
   margin-bottom: 1.5rem; /* Espaço entre parágrafos */
   color: #e0f7fa; /* Texto claro */
 }
 
-/* Segunda seção (#ia) - fundo mais escuro, separada da primeira */
+/* === Seção 2: Inteligência Artificial === */
 #ia {
-  background: linear-gradient(135deg, #0b0c10, #1f2833); /* Azul bem escuro */
-  border: 2px solid #0077cc; /* Borda azul mais fechada */
-  padding: 4rem 10%; /* Mais espaço interno */
-  margin-bottom: 4rem; /* Espaço maior abaixo para separar da próxima seção */
+  background: linear-gradient(135deg, #0b0c10, #1f2833); /* Fundo azul bem escuro */
+  border: 2px solid #0077cc; /* Borda azul fechada */
+  padding: 4rem 10%; /* Espaço interno maior */
+  margin-bottom: 4rem; /* Espaço maior para separar da próxima seção */
   border-radius: 12px; /* Bordas arredondadas */
 }
 
@@ -62,8 +62,8 @@ section {
   color: #00ffcc; /* Verde-água */
   font-size: 2.2rem; /* Tamanho do título */
   text-align: center; /* Centralizado */
-  margin-bottom: 2rem; /* Espaço abaixo */
-  border-bottom: 2px solid #00ffcc; /* Linha abaixo */
+  margin-bottom: 2rem; /* Espaço abaixo do título */
+  border-bottom: 2px solid #00ffcc; /* Linha abaixo do título */
   display: inline-block; /* Para padding e border */
   padding-bottom: 0.5rem; /* Espaço interno */
 }
@@ -72,45 +72,45 @@ section {
   font-size: 1.15rem; /* Texto maior */
   line-height: 1.8; /* Espaçamento entre linhas */
   margin-bottom: 1.5rem; /* Espaço entre parágrafos */
-  color: #cbd5e1; /* Texto claro mas menos brilhante */
+  color: #cbd5e1; /* Texto claro, menos brilhante */
 }
 
-/* Grade de vídeos na seção IA */
+/* Grade de vídeos dentro da seção IA */
 .videos {
   display: grid; /* Layout em grade */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
-  gap: 1.5rem; /* Espaço entre vídeos */
+  gap: 1.5rem; /* Espaçamento entre vídeos */
   margin-top: 2rem; /* Espaço acima da grade */
 }
 
 .videos h3 {
-  color: #00ffcc; /* Verde-água */
+  color: #00ffcc; /* Verde-água para os títulos dos vídeos */
   font-size: 1.2rem; /* Tamanho do texto */
   margin-bottom: 0.5rem; /* Espaço abaixo */
   text-align: center; /* Centralizado */
 }
 
 .videos iframe {
-  width: 100%; /* Largura total */
-  height: 200px; /* Altura fixa */
+  width: 100%; /* Largura total dentro da coluna */
+  height: 200px; /* Altura fixa para os vídeos */
   border-radius: 10px; /* Cantos arredondados */
-  border: none; /* Sem borda */
-  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* Sombra azul */
+  border: none; /* Remove borda padrão */
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* Sombra suave azul */
   transition: transform 0.3s ease; /* Animação suave */
 }
 
 .videos iframe:hover {
-  transform: scale(1.03); /* Aumento leve no hover */
+  transform: scale(1.03); /* Leve zoom ao passar o mouse */
 }
 
-/* Terceira seção (.futurista) - fundo diferente e bem destacado */
+/* === Seção 3: Futurista === */
 .futurista {
-  background: linear-gradient(135deg, #00334d, #005577); /* Azul vibrante */
+  background: linear-gradient(135deg, #00334d, #005577); /* Fundo azul vibrante */
   padding: 4rem 10%; /* Espaço interno */
   border: 2px solid #00d9ff; /* Borda azul clara */
   border-radius: 12px; /* Bordas arredondadas */
-  text-align: center; /* Centraliza texto */
-  color: #a0f0e0; /* Cor do texto um pouco diferente */
+  text-align: center; /* Centraliza o conteúdo */
+  color: #a0f0e0; /* Texto com tom diferente para destaque */
 }
 
 .futurista h2 {
