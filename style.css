@@ -97,3 +97,28 @@ iframe {
   display: inline-block;
   padding-bottom: 0.5rem;
 }
+
+#curso {
+  background: linear-gradient(135deg, #14142b, #1f1f3d); /* fundo escuro com leve gradiente */
+  padding: 4rem 10%;
+  border-top: 2px solid #00d9ff;
+  border-bottom: 2px solid #00d9ff;
+}
+
+/* Título da seção */
+#curso h2 {
+  color: #00ffcc; /* mesmo tom da seção IA */
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #00ffcc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Texto da seção */
+#curso p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
