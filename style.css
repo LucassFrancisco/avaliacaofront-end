@@ -60,3 +60,40 @@ iframe {
   font-size: 1.2rem; /* aumenta um pouco o tamanho do texto nessa seção */
   margin-top: 1rem; /* espaço entre o título e o texto */
 }
+
+/* 1. Fundo diferente para a seção de IA */
+#ia {
+  background: linear-gradient(135deg, #1a1a2e, #16213e); /* roxo escuro com azul */
+  padding: 4rem 10%;
+  border-top: 2px solid #00d9ff;
+  border-bottom: 2px solid #00d9ff;
+}
+
+/* 2. Destaque nos vídeos (sombra e efeito hover) */
+.videos iframe {
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* sombra azul suave */
+  transition: transform 0.3s ease;
+}
+
+.videos iframe:hover {
+  transform: scale(1.03); /* aumenta levemente no hover */
+}
+
+/* 3. Estilização dos títulos dos vídeos */
+.videos h3 {
+  color: #00ffcc; /* verde-água para contrastar com o fundo */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* 4. Estilização extra do título principal da seção IA */
+#ia h2 {
+  color: #00ffcc;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #00ffcc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
