@@ -9,12 +9,11 @@ body {
 /* === Cabeçalho === */
 header {
   display: flex;
-  justify-content: flex-start; /* Alinha itens à esquerda inicialmente */
   align-items: center;
   padding: 2rem 10%;
   background: linear-gradient(90deg, #0f0f1a, #1e1e3f);
+  gap: 4rem; /* Espaçamento fixo entre título e menu */
   flex-wrap: wrap;
-  gap: 3rem; /* Espaçamento fixo entre título e menu */
 }
 
 /* Bloco do título e subtítulo */
@@ -39,7 +38,7 @@ header {
 
 /* Menu alinhado à direita */
 .menu {
-  margin-left: 900px; /* Empurra o menu para a direita */
+  margin-left: auto; /* Empurra o menu para a direita */
 }
 
 .menu ul {
