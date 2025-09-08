@@ -13,35 +13,41 @@ header {
   background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Fundo com gradiente horizontal */
 }
 
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 10%;
+  background: linear-gradient(90deg, #0f0f1a, #1e1e3f);
+  color: #f5f5f5;
+}
+/* Container para título e menu alinhados horizontalmente */
+header > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Menu alinhado à direita */
+  margin-top: 1rem;
+}
+/* Título e subtítulo alinhados à esquerda */
+header h1 {
+  font-size: 2.5rem;
+  color: #00d9ff;
+  margin: 0;
+}
+header p {
+  margin: 0.25rem 0 0 0;
+  font-style: italic;
+  color: #a0a0a0;
+}
 /* Menu de navegação */
 .menu ul {
-  list-style: none; /* Remove marcadores */
+  list-style: none;
   padding: 0;
-  margin: 1.5rem 0 0 0; /* Espaço acima do menu */
-  display: flex; /* Menu horizontal */
-  justify-content: center; /* Centraliza horizontalmente */
-  gap: 2rem; /* Espaçamento entre itens */
-}
-.menu li {
-  /* Pode adicionar estilos se quiser, mas não é obrigatório */
-}
-.menu a {
-  text-decoration: none; /* Remove sublinhado */
-  color: #00d9ff; /* Azul neon */
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-block;
-}
-.menu a:hover,
-.menu a:focus {
-  background-color: #00d9ff; /* Fundo azul neon */
-  color: #0f0f1a; /* Texto escuro para contraste */
-  outline: none;
-  cursor: pointer;
-}
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+
 
 header h1 {
   font-size: 2.5rem; /* Tamanho grande para o título */
