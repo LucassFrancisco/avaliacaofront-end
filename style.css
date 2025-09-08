@@ -39,7 +39,7 @@ header {
 
 /* Menu alinhado à direita */
 .menu {
-  margin-left: 4em; /* Empurra o menu para a direita */
+  margin-left: 900px; /* Empurra o menu para a direita */
 }
 
 .menu ul {
