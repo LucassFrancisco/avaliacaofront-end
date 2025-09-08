@@ -1,39 +1,37 @@
 /* === Estilo base da página === */
 body {
-  margin: 0; /* Remove margem padrão do navegador */
-  font-family: Arial, sans-serif; /* Fonte principal da página */
-  background: #0f0f1a; /* Fundo azul escuro */
-  color: #f5f5f5; /* Cor clara para textos */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f1a;
+  color: #f5f5f5;
 }
 
 /* === Cabeçalho === */
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem 10%;
   background: linear-gradient(90deg, #0f0f1a, #1e1e3f);
-  color: #f5f5f5;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-/* Container para título e subtítulo */
-header h1 {
+/* Container do título e subtítulo */
+.header-left {
+  max-width: 60%;
+}
+
+.header-left h1 {
   font-size: 2.5rem;
   color: #00d9ff;
   margin: 0;
 }
 
-header p {
+.header-left p {
   margin: 0.25rem 0 0 0;
   font-style: italic;
   color: #a0a0a0;
-}
-
-/* Container para alinhar menu à direita */
-header > div {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end; /* Menu alinhado à direita */
-  margin-top: 1.5rem;
 }
 
 /* Menu de navegação */
@@ -43,10 +41,12 @@ header > div {
   margin: 0;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .menu li {
-  /* Pode adicionar estilos se quiser */
+  /* Opcional: estilos para os itens */
 }
 
 .menu a {
@@ -66,23 +66,6 @@ header > div {
   color: #0f0f1a;
   outline: none;
   cursor: pointer;
-}
-
-/* === Layout responsivo para desktop === */
-@media (min-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header p {
-    margin: 0 2rem 0 0;
-  }
-
-  header > div {
-    margin-top: 0;
-  }
 }
 
 /* === Estilo comum para todas as seções === */
@@ -193,4 +176,28 @@ section {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+}
+
+/* === Responsividade === */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .menu ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
