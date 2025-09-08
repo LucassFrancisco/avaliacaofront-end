@@ -83,6 +83,12 @@ header {
   }
 }
 
+.header-left {
+  text-align: left;
+  margin-right: 3rem; /* Espaçamento entre título e menu */
+}
+
+
 
 /* === Estilo comum para todas as seções === */
 section {
