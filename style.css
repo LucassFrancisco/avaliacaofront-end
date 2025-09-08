@@ -8,38 +8,34 @@ body {
 
 /* === Cabeçalho === */
 header {
-  text-align: center; /* Centraliza o conteúdo do header */
-  padding: 2rem; /* Espaço interno em cima e embaixo */
-  background: linear-gradient(90deg, #0f0f1a, #1e1e3f); /* Fundo com gradiente horizontal */
-}
-
-/* Cabeçalho */
-header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 2rem 10%;
   background: linear-gradient(90deg, #0f0f1a, #1e1e3f);
   color: #f5f5f5;
 }
-/* Container para título e menu alinhados horizontalmente */
-header > div {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end; /* Menu alinhado à direita */
-  margin-top: 1rem;
-}
-/* Título e subtítulo alinhados à esquerda */
+
+/* Container para título e subtítulo */
 header h1 {
   font-size: 2.5rem;
   color: #00d9ff;
   margin: 0;
 }
+
 header p {
   margin: 0.25rem 0 0 0;
   font-style: italic;
   color: #a0a0a0;
 }
+
+/* Container para alinhar menu à direita */
+header > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Menu alinhado à direita */
+  margin-top: 1.5rem;
+}
+
 /* Menu de navegação */
 .menu ul {
   list-style: none;
@@ -47,119 +43,154 @@ header p {
   margin: 0;
   display: flex;
   gap: 2rem;
+}
 
+.menu li {
+  /* Pode adicionar estilos se quiser */
+}
 
-header h1 {
-  font-size: 2.5rem; /* Tamanho grande para o título */
-  color: #00d9ff; /* Cor azul neon */
+.menu a {
+  text-decoration: none;
+  color: #00d9ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #00d9ff;
+  color: #0f0f1a;
+  outline: none;
+  cursor: pointer;
+}
+
+/* === Layout responsivo para desktop === */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header p {
+    margin: 0 2rem 0 0;
+  }
+
+  header > div {
+    margin-top: 0;
+  }
 }
 
 /* === Estilo comum para todas as seções === */
 section {
-  padding: 4rem 10%; /* Espaço interno vertical e horizontal (uniformizado) */
-  margin-bottom: 4rem; /* Espaço entre seções */
-  border-radius: 12px; /* Bordas arredondadas para suavizar */
-  border: 2px solid transparent; /* Borda padrão invisível para evitar quebra no layout */
-  box-shadow: 0 0 0 transparent; /* Sombra padrão invisível */
-  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Suaviza mudanças */
+  padding: 4rem 10%;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 /* === Seção 1: Curso de Desenvolvimento === */
 #curso {
-  background: linear-gradient(135deg, #162447, #1f4068); /* Fundo azul médio */
-  border-color: #00d9ff; /* Borda azul neon */
-  box-shadow: 0 0 20px rgba(0, 217, 255, 0.5); /* Sombra azul intensa */
+  background: linear-gradient(135deg, #162447, #1f4068);
+  border-color: #00d9ff;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
 }
 
 #curso h2 {
-  color: #00ffcc; /* Cor verde-água */
-  font-size: 2.2rem; /* Tamanho do título */
-  text-align: center; /* Centralizado */
-  margin-bottom: 1.5rem; /* Espaço abaixo do título */
-  border-bottom: 2px solid #00ffcc; /* Linha azul abaixo */
-  display: inline-block; /* Permite padding e border */
-  padding-bottom: 0.5rem; /* Espaço entre o texto e a linha */
+  color: #00ffcc;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #00ffcc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 #curso p {
-  font-size: 1.15rem; /* Texto maior para melhor leitura */
-  line-height: 1.8; /* Espaçamento entre linhas */
-  margin-bottom: 1.5rem; /* Espaço entre parágrafos */
-  color: #e0f7fa; /* Texto claro */
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #e0f7fa;
 }
 
 /* === Seção 2: Inteligência Artificial === */
 #ia {
-  background: linear-gradient(135deg, #0b0c10, #1f2833); /* Fundo azul bem escuro */
-  border-color: #0077cc; /* Borda azul fechada */
-  box-shadow: 0 0 20px rgba(0, 119, 204, 0.6); /* Sombra azul média */
+  background: linear-gradient(135deg, #0b0c10, #1f2833);
+  border-color: #0077cc;
+  box-shadow: 0 0 20px rgba(0, 119, 204, 0.6);
 }
 
 #ia h2 {
-  color: #00ffcc; /* Verde-água */
-  font-size: 2.2rem; /* Tamanho do título */
-  text-align: center; /* Centralizado */
-  margin-bottom: 2rem; /* Espaço abaixo do título */
-  border-bottom: 2px solid #00ffcc; /* Linha abaixo do título */
-  display: inline-block; /* Para padding e border */
-  padding-bottom: 0.5rem; /* Espaço interno */
+  color: #00ffcc;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #00ffcc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 #ia p {
-  font-size: 1.15rem; /* Texto maior */
-  line-height: 1.8; /* Espaçamento entre linhas */
-  margin-bottom: 1.5rem; /* Espaço entre parágrafos */
-  color: #cbd5e1; /* Texto claro, menos brilhante */
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
 }
 
 /* Grade de vídeos dentro da seção IA */
 .videos {
-  display: grid; /* Layout em grade */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
-  gap: 1.5rem; /* Espaçamento entre vídeos */
-  margin-top: 2rem; /* Espaço acima da grade */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .videos h3 {
-  color: #00ffcc; /* Verde-água para os títulos dos vídeos */
-  font-size: 1.2rem; /* Tamanho do texto */
-  margin-bottom: 0.5rem; /* Espaço abaixo */
-  text-align: center; /* Centralizado */
+  color: #00ffcc;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .videos iframe {
-  width: 100%; /* Largura total dentro da coluna */
-  height: 200px; /* Altura fixa para os vídeos */
-  border-radius: 10px; /* Cantos arredondados */
-  border: none; /* Remove borda padrão */
-  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); /* Sombra suave azul */
-  transition: transform 0.3s ease; /* Animação suave */
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .videos iframe:hover {
-  transform: scale(1.03); /* Leve zoom ao passar o mouse */
+  transform: scale(1.03);
 }
 
 /* === Seção 3: Futurista === */
 .futurista {
-  background: linear-gradient(135deg, #00334d, #005577); /* Fundo azul vibrante */
-  border-color: #00d9ff; /* Borda azul clara */
-  box-shadow: 0 0 20px rgba(0, 217, 255, 0.7); /* Sombra azul intensa */
-  text-align: center; /* Centraliza o conteúdo */
-  color: #a0f0e0; /* Texto com tom diferente para destaque */
+  background: linear-gradient(135deg, #00334d, #005577);
+  border-color: #00d9ff;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.7);
+  text-align: center;
+  color: #a0f0e0;
 }
 
 .futurista h2 {
-  font-size: 2.2rem; /* Tamanho do título */
-  color: #00ffcc; /* Verde-água */
-  margin-bottom: 1.5rem; /* Espaço abaixo */
-  border-bottom: 2px solid #00ffcc; /* Linha abaixo */
-  display: inline-block; /* Para padding e border */
-  padding-bottom: 0.5rem; /* Espaço interno */
+  font-size: 2.2rem;
+  color: #00ffcc;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #00ffcc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 .futurista p {
-  font-size: 1.2rem; /* Texto maior */
-  margin-bottom: 1.5rem; /* Espaço entre parágrafos */
-  line-height: 1.6; /* Espaçamento entre linhas */
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
