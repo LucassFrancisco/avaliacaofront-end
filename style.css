@@ -12,14 +12,14 @@ header {
   align-items: center;
   padding: 2rem 10%;
   background: linear-gradient(90deg, #0f0f1a, #1e1e3f);
-  gap: 4rem; /* Espaçamento fixo entre título e menu */
-  flex-wrap: wrap;
+  gap: 4rem;
+  flex-wrap: nowrap; /* evita quebra de linha */
 }
 
 /* Bloco do título e subtítulo */
 .header-left {
+  flex-shrink: 0; /* não encolhe */
   text-align: left;
-  flex-shrink: 0; /* Não encolhe */
 }
 
 /* Estilos do título */
@@ -38,7 +38,7 @@ header {
 
 /* Menu alinhado à direita */
 .menu {
-  margin-left: auto; /* Empurra o menu para a direita */
+  margin-left: auto; /* empurra o menu para a direita */
 }
 
 .menu ul {
@@ -76,18 +76,15 @@ header {
     align-items: flex-start;
     gap: 1rem;
   }
-
   .menu {
     margin-left: 0;
     width: 100%;
   }
-
   .menu ul {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
   }
-
   .menu a {
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
